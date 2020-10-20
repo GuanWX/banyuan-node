@@ -2,10 +2,9 @@
 
 ## Markdown语法
 
-[Markdown语法链接](http://git-scm.com/downloads)
+[Markdown语法链接](https://www.jianshu.com/p/191d1e21f7ed)
 
 # 一、标题
-
 # 这是一级标题
 ## 这是二级标题
 ### 这是三级标题
