@@ -42,14 +42,17 @@
 
 ## 两种超链接的写法
 
-[超链接名](超链接地址 "超链接title")
+`[超链接名](超链接地址 "超链接title")`
+
 title可加可不加
 
 [简书](http://jianshu.com "简书")
+
 [百度](http://baidu.com)
 
+```
 <a href="超链接地址" target="_blank">超链接名</a>
-
+```
 示例
 <a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a>
 
