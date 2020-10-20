@@ -42,7 +42,7 @@
 
 ## 两种超链接的写法
 
-``` makedowns
+``` markdown
 [超链接名](超链接地址 "超链接title")
 ```
 
@@ -52,7 +52,7 @@ title可加可不加
 
 [百度](http://baidu.com)
 
-```
+``` markdown
 <a href="超链接地址" target="_blank">超链接名</a>
 ```
 示例
