@@ -85,7 +85,7 @@ int main(){
 
 ## 截图直接粘贴到文件中
 
-![image-20201019222233376](/Users/edz/Library/Application Support/typora-user-images/image-20201019222233376.png)
+![image-20201019222233376](./img/image-20201019222233376.png)
 
 
 
