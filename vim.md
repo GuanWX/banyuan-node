@@ -53,3 +53,21 @@ f: 在本行查找光标后最近的:
 ## 组合命令（类似shell的管道）
 y f c 复制当前光标打到字符c的全部内容
 
+
+## vim 配置信息
+```
+let mapleader=" "
+syntax on
+set number
+set wrap
+set showcmd
+set wildmenu
+
+set hlsearch
+exec "nohlsearch"
+se incsearch
+set ignorecase
+set smartcase
+
+noremap <LEADER><CR> :nohlsearch<CR>
+```

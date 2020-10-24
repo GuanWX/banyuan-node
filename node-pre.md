@@ -133,6 +133,8 @@ int main(){
 + 目录操作 pwd,cd,ls
 + 文件和文件夹操作 touch,mkdir,cp,mv,rm,cat,more,find,grep 
 + 修改文件权限 chmod,chgrp,chown
++ xargs 将前一个命令的输出作为参数输入给下一个命令 例如：find . -name "*.txt" | xargs rm 删除当前文件中以.txt结尾的文件
++ | 管道符 将上个命令的输出作为输入传递给下个命令 例如：ps aux | grep DingDing
 
 ### 根目录 (/) 的意义与内容：
 
