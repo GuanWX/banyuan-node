@@ -81,6 +81,7 @@
 			<!-- 提交按钮 -->
 			<div>
 				<button type="submit">登录</button>
+				<button type="reset">清空</button>
 			</div>
 		</form>
 
@@ -90,22 +91,28 @@
 				<button type="submit">请求</button>
 			</div>
 		</form>
-		<input type="text">
-		<input type="password">
-		<input type="button" name="按钮">
+
+		<input type="text"><br>
+		<input type="password"><br>
+		<!-- value 给一个默认值 disabled 不能修改 -->
+		<input type="text" value="默认" disabled><br>
+		<input type="text" value="默认"><br>
+		<input type="button" value="按钮">
 		<!-- 复选框 -->
+		<!-- checked 默认选中 -->
 		<div>
-			<input type="checkbox" name="ah">羽毛球<br>
+			<input type="checkbox" name="ah" checked>羽毛球<br>
 			<input type="checkbox" name="ah">足球<br>
 			<input type="checkbox" name="ah">其他<br>
 		</div>
 		<!-- 单选框 -->
 		<div>
-			<input type="radio" name="sex">男<br>
-			<input type="radio" name="sex">女<br>
+			<input type="radio" name="sex" checked>男<br>
+			<input type="radio" name="sex" >女<br>
 			<input type="radio" name="sex">其他<br>
 		</div>
 		<!-- 选择文件 -->
 		<input type="file">
+
 	</body>
 </html>
