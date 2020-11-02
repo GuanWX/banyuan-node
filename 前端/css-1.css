@@ -8,9 +8,26 @@ h2{
 }
 #p3{
     font-size: 20px;
-}
-div{
-    color: yellow;
+    /* 首行缩进 */
+    text-indent: 100px;
+    text-indent: 2em;
+    /* 文本对齐 */
+    text-align: right;
+    text-align: center;
+    /* 字组间隔，根据空格分 */
+    word-spacing: 50px;
+    /* 字符间隔 */
+    letter-spacing: 10px;
+    /* 行高 */
+    line-height: 50px;
+    /* 字母装换 */
+    text-transform: capitalize;
+    text-transform: lowercase;
+    text-transform: uppercase;
+    /* 文本划线 */
+    text-decoration: overline;
+    text-decoration: underline;
+    text-decoration: line-through;
 }
 .box{
     font-size: 20px;
@@ -22,6 +39,10 @@ div{
     color: black;
 }
 span{
+    font-family: STFangsong;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
     color: royalblue;
 }
 .inputbox{
