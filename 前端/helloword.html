@@ -27,7 +27,52 @@
 			<dd>不愿动</dd>
 			<dd>与世无争</dd>
 		</dl>
-		<img src="../img/image-20201019222233376.png" alt="描述图片内容" width="600px"><br>
-		<iframe src="https://www.baidu.com" frameborder="0" width="1920px" height="1080px"></iframe>
+		<!-- <img src="../img/image-20201019222233376.png" alt="描述图片内容" width="600px"><br>
+		<iframe src="https://www.baidu.com" frameborder="0" width="1920px" height="1080px"></iframe> -->
+		<!-- 表格 -->
+		<table>
+			<tr>
+				<th></th>
+			</tr>
+		</table>
+		<!-- 接口请求 -->
+		<form action="https://www-pre.banyuan.club/api/user/login" method="POST">
+			<!-- 输入框 -->
+			<div>
+				<input type="text" name="phone" placeholder="请输入手机号码">
+			</div>
+			<!-- 密码输入框 -->
+			<div>
+				<input type="password" name="password" placeholder="请输入密码">
+			</div>
+			<!-- 提交按钮 -->
+			<div>
+				<button type="submit">登录</button>
+			</div>
+		</form>
+
+		<form action="https://www-pre.banyuan.club/api/liveCourse/displayList?" method="GET">
+			<!-- 提交按钮 -->
+			<div>
+				<button type="submit">请求</button>
+			</div>
+		</form>
+		<input type="text">
+		<input type="password">
+		<input type="button" name="按钮">
+		<!-- 复选框 -->
+		<div>
+			<input type="checkbox" name="ah">羽毛球<br>
+			<input type="checkbox" name="ah">足球<br>
+			<input type="checkbox" name="ah">其他<br>
+		</div>
+		<!-- 单选框 -->
+		<div>
+			<input type="radio" name="sex">男<br>
+			<input type="radio" name="sex">女<br>
+			<input type="radio" name="sex">其他<br>
+		</div>
+		<!-- 选择文件 -->
+		<input type="file">
 	</body>
 </html>
