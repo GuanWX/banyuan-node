@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .myself{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <button onclick="ChangeShow('block','none')">首页</button>
+        <button onclick="ChangeShow('none','block')">个人中心</button>
+    </div>
+    <div class="home">
+        <p>首页</p>
+    </div>
+    <div class="myself">
+        <p>个人中心</p>
+    </div>
+
+    <div id="box">
+        <p>下面是追加的标签</p>
+        <button onclick="AddElement()">追加标签</button>
+    </div>
+    <script>
+        function ChangeShow (str1,str2){
+            var home = document.getElementsByClassName('home')[0];
+            var myself = document.getElementsByClassName('myself')[0];
+            home.style.display = str1;
+            myself.style.display = str2;
+        }
+        function AddElement(){
+            // js 追加标签，通过id选择元素
+            var p = document.createElement('p');
+            p.innerHTML = '我是追加的元素';
+            var box = document.getElementById('box');
+            box.appendChild(p);
+            // 通过jquery追加的标签
+            $('#box').append('<p>jquery追加的元素</p>')
+
+            $('#box').append('<ul>追加列表'
+            +'<li>茶</li>'
+            +'<li>可乐</li>'
+            +'<li>奶茶</li>'
+            +'</ul>'
+            )
+
+            $('.myself').append(`<ul>
+            <li>通过\`追加的标签</li>
+            <li>通过\`追加的标签</li>
+            <li>通过\`追加的标签</li>
+            </ul>
+            `)
+        }
+    </script>
+    <div id="FriendState">
+        <style>
+            .name{
+                font-size: 20px;
+            }
+            .text{
+                font-size: 18px;
+            }
+            .textbox{
+                margin: 50px 30px;
+                padding: 10px;
+                box-shadow: 0px 0px 10px #cacaca;
+                border-radius: 10px;
+            }
+        </style>
+    </div>
+    <script>
+        var arr = [
+            {
+                nickname:"小红",
+                text:"今天风景不错"
+            },
+            {
+                nickname:"小明",
+                text:"今天风很大！"
+            },
+            {
+                nickname:"宝强",
+                text:"!!!!!!!!!!!"
+            }
+        ];
+        box = $('#FriendState')
+        for (var i = 0;i < arr.length ; i++){
+            box.append(`<div class="textbox">
+                <p class="name">${arr[i].nickname}</p>
+                <p class="text">${arr[i].text}</p>
+            </div>`);
+        }
+    </script>
+</body>
+</html>
