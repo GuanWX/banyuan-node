@@ -7,6 +7,14 @@
   数据类型[0][]=new 数据类型[1];
   数据类型[1][]=new 数据类型[2];
   数据类型[2][]=new 数据类型[3];
+### String数组
+动态数组和静态数组不能相互赋值，动态数组可以通过名字
+```java
+String [] str1 = new String[6]; //动态数组
+String [] str2 = {"asd","pwd"}; //静态数组
+str1 = {"asd","ls"}; //报错
+str1 = str2; //正确
+```
 
 ### 手动编译
 java文件内部需要声明文件中定义的类所在的包路径，使用`package`关键字，`package`必须写到文件的起始位置，上面除了注释代码不能再有其他的代码了。如果有多级路径，父子路径间使用`.`连接,使用`;`结尾。
@@ -154,3 +162,7 @@ java simulation/ObjectDemo
 ## 包的命名规则
 
 为了保证包名（类所在的文件夹名）的绝对唯一，sun公司建议将公司的因特网域名，以逆序的形式作为包名，因为每个组织的域名肯定是唯一的，这样可以保证引用第三方开发的类进行项目构建的时候，可以保证不会出现冲突的类命名，例如club.banyuan作为包路径。还可以继续划分子路径club.banyuan.simulation。
+
+## 报错
++ System.out.println(3.0/0);    Infinity
++ System.out.println(3/0);    Java.lang,ArithmeticException 异常抛出。 
